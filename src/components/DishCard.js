@@ -3,7 +3,7 @@ import "./DishCard.css";
 import { FaPlus } from "react-icons/fa";
 import { LuSquareDot } from "react-icons/lu";
 import { imageMap } from "../data/imageMap";
-import notFoundImage from "../assets/not-found-image.jpg";
+import notFoundImage from "../assets/not-found.png";
 
 
 const DishCard = ({ dish, isSelected, onAddDish, onRemoveDish, onViewIngredients }) => {
