@@ -17,18 +17,19 @@ const App = () => {
   // Filter dishes based on current filters
   const filteredDishes = useMemo(() => {
     return mockDishes.filter((dish) => {
-      // Category filter
-      if (dish.mealType !== selectedCategory) return false;
-
-      // Search filter
+      // Search filter (apply first, across ALL categories)
       if (searchTerm && !dish.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return false;
+      }
+
+      // Category filter (only if search is empty)
+      if (!searchTerm && dish.mealType !== selectedCategory) {
         return false;
       }
 
       // Veg/Non-veg filter
       if (vegOnly && nonVegOnly) {
-        // If both are selected, show all
-        return true;
+        return true; // Show all if both checked
       } else if (vegOnly) {
         return dish.type === "VEG";
       } else if (nonVegOnly) {
@@ -115,7 +116,7 @@ const App = () => {
           disabled={totalSelectedDishes === 0}
           onClick={() => {
             alert("✅ Order placed successfully!");
-            setSelectedDishes([]); 
+            setSelectedDishes([]);
           }}
         >
           Continue
