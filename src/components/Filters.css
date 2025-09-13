@@ -1,0 +1,177 @@
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Search Bar */
+.search-container {
+  width: 100%;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 12px 12px 44px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Diet Filters */
+.diet-filters {
+  display: flex;
+  gap: 16px;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.checkmark.veg {
+  border-color: #22c55e;
+  background-color: transparent;
+}
+
+.checkmark.non-veg {
+  border-color: #ef4444;
+  background-color: transparent;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkmark.veg {
+  background-color: #22c55e;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkmark.non-veg {
+  background-color: #ef4444;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px;
+}
+
+.category-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background-color: white;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.category-tab:hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+
+.category-tab.active {
+  background: linear-gradient(135deg, #ff6b35, #ff8f65);
+  border-color: #ff6b35;
+  color: white;
+}
+
+.tab-label {
+  font-weight: 500;
+}
+
+.tab-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #ff6b35;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.category-tab.active .tab-count {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #ff6b35;
+}
+
+/* Scrollbar styling */
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tabs {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

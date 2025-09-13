@@ -1,0 +1,144 @@
+.dish-card {
+  padding: 16px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.dish-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dish-content {
+  display: flex;
+  gap: 12px;
+}
+
+/* Dish Image */
+.dish-image-container {
+  flex-shrink: 0;
+}
+
+.dish-image-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.dish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dish Details */
+.dish-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.dish-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dish-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.dish-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.dish-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+
+
+.dish-description {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0 0 8px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  line-height: 1.4;
+}
+
+.ingredient-button {
+  background: none;
+  border: none;
+  color: #ff6b35;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.ingredient-button:hover {
+  color: #e55a2b;
+}
+
+/* Action Button */
+.action-button-container {
+  flex-shrink: 0;
+}
+
+.add-button,
+.remove-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 16px;
+  height: 32px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.add-button {
+  background-color: transparent;
+  border: 1px solid #ff6b35;
+  color: #ff6b35;
+}
+
+.add-button:hover {
+  background: linear-gradient(135deg, #ff6b35, #ff8f65);
+  color: white;
+}
+
+.plus-icon {
+  width: 12px;
+  height: 12px;
+  stroke-width: 2;
+}
+
+.remove-button {
+  background: linear-gradient(135deg, #ff6b35, #ff8f65);
+  border: none;
+  color: white;
+}
+
+.remove-button:hover {
+  background: linear-gradient(135deg, #e55a2b, #e8744d);
+}
