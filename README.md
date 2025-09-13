@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🍽️ Party Menu Selection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Overview 
+The app allows users to browse dishes, filter them by categories, search, apply Veg/Non-Veg filters, view dish ingredients, and select dishes for their party menu.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎨 Figma Design
+You can check the original design reference here:  
+👉 [Figma Design Link](https://www.figma.com/design/j7VAQnzrL435tnYiQP1bac/React-Native-Assignment?node-id=0-1&t=Ido2BfnGCEFnXvPT-1)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
+- 📌 **Menu Categories** – Starter, Main Course, Dessert, Sides (tab-based navigation).
+- 🍲 **Dish List** – Card with dish name, description, image, Add/Remove button, and Ingredients button.
+- 🔎 **Search** – Case-insensitive search by dish name.
+- 🥦 **Veg / Non-Veg Filter** – Toggle between Veg & Non-Veg dishes.
+- 📊 **Dish Selection Summary** – Selected count per category and overall.
+- 📋 **Ingredient Modal** – Dish details with ingredient list & quantities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
+- ReactJS (Hooks + Functional Components)
+- React Icons
+- CSS (Flexbox & Grid)
+- Mock JSON Data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Project Structure
+```
+party-menu-app/
+├── src/
+├── components
+│   ├── components/
+│   │   ├── DishCard.js
+|   |   ├── DishCard.css
+│   │   ├── DishList.js
+|   |   ├── DishList.css
+│   │   ├── Filters.js
+|   |   ├── Filters.css
+|   |   ├── IngredientModal.js
+│   │   └── IngredientModal.css
+│   ├── data/
+|   |   ├── imageMap.js
+│   │   └── mockDishes.js
+│   ├── App.css
+│   └── App.js
+└── README.md
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Installation & Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/party-menu-app.git
+   cd party-menu-app
+   ```
 
-### `npm run eject`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open in browser:
+   ```
+   http://localhost:3000
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🖼️ Screenshots / Preview
+| Dish List | Dish Card | Ingredient Modal |
+|-----------|-----------|------------------|
+| <img src="https://res.cloudinary.com/dq1ktqbtb/image/upload/v1757761475/Screenshot_2025-09-13_163144_wefu7g.png" /> |  <img src="https://res.cloudinary.com/dq1ktqbtb/image/upload/v1757762245/Screenshot_2025-09-13_164710_bmz1rr.png" /> |  <img src="https://res.cloudinary.com/dq1ktqbtb/image/upload/v1757761476/Screenshot_2025-09-13_163156_npxu7g.png" /> |
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ✅ Deliverables
+- Functional ReactJS app with:
+  - Category-based dish listing
+  - Search & Veg/Non-Veg filters
+  - Add/Remove functionality
+  - Dish selection summary
+  - Ingredient modal
+- Public GitHub Repository
+- Reference design linked via Figma
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🏆 Assignment Purpose
+This project demonstrates:
+- ReactJS fundamentals (components, props, state, hooks)
+- Filtering, searching, conditional rendering
+- Component-driven architecture
+- Clean UI/UX design
